@@ -2,7 +2,10 @@
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-	_img.allocate(1024, 768, ofImageType::OF_IMAGE_COLOR);
+	int x = ofGetScreenWidth();
+	int y = ofGetScreenHeight();
+
+	_img.allocate(x, y, ofImageType::OF_IMAGE_COLOR);
 	clear(ofColor::black);
 
 
@@ -15,9 +18,10 @@ void ofApp::update() {
 
 //--------------------------------------------------------------
 void ofApp::draw() {
+	ofColor red(255, 0, 0);
 
-	for (int x = 0; x, 1024; ++x)
-		putPixel(512, 768 / 2, ofColor::red);
+	for (int x = 0; x < 1024; ++x)
+		putPixel(x, 768 / 2, red);
 
 
 }
@@ -85,7 +89,8 @@ void ofApp::putPixel(const int & x, const int & y, const ofColor & color) {
 
 }
 //--------------------------------------------------------------
-void ofApp::FASTputPixel(const int & x, const int & y, const ofColor & color) {
+void ofApp::FASTputPixel( const int & x, const int & y, const ofColor & color) {
+	
 
 	_img.setColor(x, y, color);
 

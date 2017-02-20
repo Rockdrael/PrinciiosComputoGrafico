@@ -1,3 +1,7 @@
-﻿  Line.vcxproj -> D:\Users\Admin\Desktop\of_v0.9.8_vs_release\apps\myApps\Line\bin\Line_debug.exe
+﻿  MidPointLine.cpp
+  main.cpp
+  ofApp.cpp
+     Creating library bin\Line_debug.lib and object bin\Line_debug.exp
+  Line.vcxproj -> D:\Users\Admin\Desktop\of_v0.9.8_vs_release\apps\myApps\Line\bin\Line_debug.exe
   
   	                   9	D:\Users\Admin\Desktop\of_v0.9.8_vs_release\export\vs\Win32\
